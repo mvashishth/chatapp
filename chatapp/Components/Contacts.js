@@ -4,7 +4,7 @@ import { FlatList, StyleSheet, Text, ScrollView } from 'react-native';
 const styles = StyleSheet.create({
   container: {
    paddingTop: 0,
-   paddingBottom:10,
+   paddingBottom:100,
   },
   item: {
     padding: 20,
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 });
 
 const FlatListBasics = () => {
-    const Data=[
+    var Data=[
           {key: 'Devin'},
           {key: 'Dan'},
           {key: 'Dominic'},
@@ -30,15 +30,25 @@ const FlatListBasics = () => {
           {key: '123'},
           {key: 'Japan'},
           {key: 'Russia'},
-          {key: 'Belarus'}
+          {key: 'Belarus'},
+          
 
 
         ];
+
+    var zeta={key: 'Wings',
+              key:'hello'};
+
+  
+    var Data2=Data;
+    Data2.push(zeta);
+    console.log(Data2);
+
   return (
 
     <ScrollView style={styles.container}>
       <FlatList
-        data={Data}
+        data={Data2}
         renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
       />
     </ScrollView>
