@@ -1,5 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, ScrollView } from 'react-native';
+import Contacts from 'react-native-contacts';
 
 const styles = StyleSheet.create({
   container: {
@@ -36,10 +37,14 @@ const FlatListBasics = () => {
 
         ];
 
-    var zeta={key: 'Wings',
-              key:'hello'};
+    var zeta={key: 'Wings'};
 
   
+    var Data2=Data;
+    Data2.push(zeta);
+    console.log(Data2);
+
+    var zeta={key: ''};
     var Data2=Data;
     Data2.push(zeta);
     console.log(Data2);
