@@ -10,12 +10,9 @@ import FlatListBasics from './Components/Contacts.js'
 
 const App = () => {
   return (
-<View>
-<Header />
+
 <FlatListBasics />
 
-
-</View>
   );
 };
 
